@@ -1,0 +1,29 @@
+<p>
+<code>%%Database%%</code> will be replaced with the Database name.
+<code>%%DBHost%%</code> will be replaced with the Database server's host.
+</p>
+
+<mtapp:setting
+    id="display_format"
+    label="<__trans phrase="Display Format">"
+    hint="">
+<input type="text" name="display_format" value="<mt:var name="display_format" encode_html="1">" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="link_href"
+    label="<__trans phrase="Link Format">"
+    hind="">
+<input type="text" name="link_href" value="<mt:var name="link_href" encode_html="1">" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="show_on"
+    label="<__trans phrase="Show on">"
+    hind="">
+<select name="show_on">
+    <option value="1"<mt:if name="show_on" eq="1"> selected="selected"</mt:if>><__trans phrase="Header"></option>
+    <option value="2"<mt:if name="show_on" eq="2"> selected="selected"</mt:if>><__trans phrase="Footer"></option>
+    <option value="3"<mt:if name="show_on" eq="3"> selected="selected"</mt:if>><__trans phrase="Both of Header and Footer"></option>
+</select>
+</mtapp:setting>
