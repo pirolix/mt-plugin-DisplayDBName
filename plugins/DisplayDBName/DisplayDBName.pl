@@ -1,12 +1,14 @@
 package MT::Plugin::Admin::OMV::DisplayDBName;
+# $Id$
 
 use strict;
+use MT 5;
 use MT::Util;
 
 use vars qw( $VENDOR $MYNAME $VERSION );
 ($VENDOR, $MYNAME) = (split /::/, __PACKAGE__)[-2, -1];
 (my $revision = '$Rev$') =~ s/\D//g;
-$VERSION = "0.02_$revision";
+$VERSION = '0.02'. ($revision ? ".$revision" : '');
 
 use constant {
     SHOW_ON_HEADER =>   1,
