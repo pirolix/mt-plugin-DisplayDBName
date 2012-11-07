@@ -8,7 +8,7 @@ use MT::Util;
 use vars qw( $VENDOR $MYNAME $VERSION );
 ($VENDOR, $MYNAME) = (split /::/, __PACKAGE__)[-2, -1];
 (my $revision = '$Rev$') =~ s/\D//g;
-$VERSION = '0.02'. ($revision ? ".$revision" : '');
+$VERSION = 'v0.02'. ($revision ? ".$revision" : '');
 
 use constant {
     SHOW_ON_HEADER =>   1,
